@@ -49,7 +49,8 @@ public abstract class EntityUtils {
                 return entity;
             }
         }
-        int i = 0;
+        int i = 2;
+        
         throw new ObjectRetrievalFailureException(entityClass, entityId);
     }
 
