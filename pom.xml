@@ -19,6 +19,18 @@
         <xmlOutput>true</xmlOutput>
       </configuration>
     </plugin>
+    <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <version>2.5.2</version>
+            <configuration>
+                <check></check>
+                <formats>
+                    <format>html</format>
+                    <format>xml</format>
+                </formats>
+            </configuration>
+        </plugin>
   </plugins>
 </reporting>
 	<properties>
@@ -509,6 +521,7 @@
            <configuration>
                <formats>
                    <format>xml</format>
+                   <format>html</format>
                </formats>
                <executions>
                     <execution>
