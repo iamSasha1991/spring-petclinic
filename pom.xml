@@ -7,7 +7,20 @@
 
 	<name>petclinic</name>
 	<packaging>war</packaging>
-
+<reporting>
+  <plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>findbugs-maven-plugin</artifactId>
+      <version>${version.plugin.codehaus.findbugs}</version>
+      <configuration>
+        <findbugsXmlOutput>true</findbugsXmlOutput>
+        <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+        <xmlOutput>true</xmlOutput>
+      </configuration>
+    </plugin>
+  </plugins>
+</reporting>
 	<properties>
 
 		<!-- Generic properties -->
