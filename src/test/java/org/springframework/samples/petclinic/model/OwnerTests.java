@@ -31,7 +31,7 @@ public class OwnerTests {
     @Test
     @Transactional
     public void testHasPet() {
-        Owner owner = new Owner();
+        Owner owner = new Owner();s
         Pet fido = new Pet();
         fido.setName("Fido");
         assertNull(owner.getPet("Fido"));
